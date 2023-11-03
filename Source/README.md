@@ -46,10 +46,13 @@ Collision testing:
 
 Libraries Used:
 
-- `#include <fstream&gt>`
-- `#include &lt;vector&gt;`
-- `#include &lt;algorithm&gt;`
-- `#include &lt;cmath&gt;`
+- `#include <fstream>`
+- `#include <vector>`
+- `#include <algorithm>`
+- `#include <cmath>`
+- `#include <vector>`
+- `#include <iostream>`
+- `#include <string>`
 - `JSON`
 
 ### Gameplay
