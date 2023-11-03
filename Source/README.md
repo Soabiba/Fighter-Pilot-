@@ -46,11 +46,11 @@ Collision testing:
 
 Libraries Used:
 
-#include <fstream>
-#include <vector>
-#include <algorithm>
-#include <cmath>
-JSON
+1.#include <fstream>
+2.#include <vector>
+3.#include <algorithm>
+4.#include <cmath>
+5.JSON
 
 ### Gameplay
 
