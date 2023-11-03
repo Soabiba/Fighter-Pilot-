@@ -1,5 +1,3 @@
-# raylib_template
-
 # Fighter Pilot - An Exciting Air Combat Game
 
 ## Description
