@@ -13,6 +13,8 @@ void Level::Resources()
 	menuImage = LoadTexture("./Source/Assets/menu.png");
 	collisionBg = LoadTexture("./Source/Assets/menu.png");
 	highscoreImage = LoadTexture("./Source/Assets/highscoreImage.png");
+	enemyTexture = LoadTexture("./Source/Assets/enemyTexture.png");
+	fasterenemyTexture = LoadTexture("./Source/Assets/fasterenemyTexture.png");
 	//Upload sounds for Game
 
 	hitSound = LoadSound("./Source/Assets/Hitting.mp3");

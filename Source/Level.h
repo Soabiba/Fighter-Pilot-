@@ -142,7 +142,7 @@ private:
     void SpawnEnemyShip();
 
     // Non-destructible enemies Functions & Variables
-    struct IndestructibleEnemy 
+    struct FasterEnemyPlanes 
     {
         Vector2 position = {};
         float speed = 0.0f;
@@ -152,9 +152,9 @@ private:
         bool isDead = false;
     };
 
-    std::vector<IndestructibleEnemy> indestructibleEnemies;
+    std::vector<FasterEnemyPlanes> fasterEnemyPlanes;
 
-    void SpawnIndestructibleEnemy();
+    void SpawnFasterEnemyPlanes();
 
     // Player Variables
     struct plane
@@ -220,7 +220,9 @@ private:
     Texture2D menuImage;
     Texture2D collisionBg;
     Texture2D highscoreImage;
-
+    Texture2D enemyTexture;
+    Texture2D fasterenemyTexture;
+        
     // Sounds
     Sound hitSound;
     Sound gameOverSound;

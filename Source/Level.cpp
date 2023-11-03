@@ -232,7 +232,7 @@ void Level::UpdateMainGame() {
     double elapsedTimeSinceLastSpawn = currentTime - lastEnemySpawnTime;
     if (elapsedTimeSinceLastSpawn >= enemySpawnInterval) {
         SpawnEnemyShip();
-        SpawnIndestructibleEnemy();
+        SpawnFasterEnemyPlanes();
         lastEnemySpawnTime = currentTime;
     }
 
@@ -265,18 +265,18 @@ void Level::UpdateMainGame() {
 
     // indistructable enemy planes collisions and movement.
 
-    for (auto& indestructibleEnemy : indestructibleEnemies) {
+    for (auto& indestructibleEnemy : fasterEnemyPlanes) {
         if (!indestructibleEnemy.isDead) {
             Rectangle indestructibleEnemyHitbox = { indestructibleEnemy.position.x, indestructibleEnemy.position.y, indestructibleEnemy.width, indestructibleEnemy.height };
             if (CheckCollisionRecs(plane.rec, indestructibleEnemyHitbox)) {
                 plane.isDead = true;
 
                 if (IsHighScore(highscore.score)) {
-                    indestructibleEnemies.clear();
+                    fasterEnemyPlanes.clear();
                     gameState = WRITE_NAME;
                 }
                 else {
-                    indestructibleEnemies.clear();
+                    fasterEnemyPlanes.clear();
                     gameState = GAME_OVER;
                 }
             }
@@ -399,17 +399,17 @@ void Level::SpawnEnemyShip() {
 
 // Spawn an indestructable enemy plane with random initial position.
 
-void Level::SpawnIndestructibleEnemy()
+void Level::SpawnFasterEnemyPlanes()
 {
 
-    IndestructibleEnemy InEnemy;
+    FasterEnemyPlanes InEnemy;
     InEnemy.position = { static_cast<float>(screenWidth), static_cast<float>(GetRandomValue(0, static_cast<int>(screenHeight) - static_cast<int>(InEnemy.height))) };
     InEnemy.speed = 20.0f;
     InEnemy.isDead = false;
     InEnemy.color = SKYBLUE;
     InEnemy.width = 40;
     InEnemy.height = 40;
-    indestructibleEnemies.push_back(InEnemy);
+    fasterEnemyPlanes.push_back(InEnemy);
 }
 
 // Handle collisions between missiles and enemy planes.

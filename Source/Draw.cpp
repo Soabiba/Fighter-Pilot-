@@ -44,7 +44,7 @@ void Level::Draw()
 
 void Level::DrawMain_Menu()
 {
-    DrawTexture(menuImage, 0, 0, WHITE);
+    DrawTexture(menuImage, -22, -100, WHITE);
 
     DrawButton(StartButton, StartButton.isHighlighted);
     DrawButton(scoresButton, scoresButton.isHighlighted);
@@ -73,15 +73,14 @@ void Level::RenderGameScreen()
     // Draw Enemies
     for (const auto& enemy : enemyplanes) {
         if (!enemy.isDead) {
-
-            DrawRectangle(static_cast<int>(enemy.position.x), static_cast<int>(enemy.position.y), enemy.width, enemy.height, DARKGREEN);
+            DrawTexture(enemyTexture, static_cast<int>(enemy.position.x), static_cast<int>(enemy.position.y), WHITE);
         }
     }
 
     // Draw enemies that cannot be destoyed
-    for (const auto& InEnemy : indestructibleEnemies) {
+    for (const auto& InEnemy : fasterEnemyPlanes) {
         if (!InEnemy.isDead) {
-            DrawRectangle(static_cast<int>(InEnemy.position.x), static_cast<int>(InEnemy.position.y), (int)InEnemy.width, (int)InEnemy.height, InEnemy.color);
+            DrawTexture(fasterenemyTexture, static_cast<int>(InEnemy.position.x), static_cast<int>(InEnemy.position.y), WHITE);
         }
     }
 
@@ -125,7 +124,7 @@ void Level::DrawHighScore()
 
 void Level::DrawGameOver()
 {
-    DrawTexture(collisionBg, 0, 0, WHITE);
+    DrawTexture(collisionBg, -22, -100, WHITE);
     if (!musicPlayed)
     {
         PlaySound(gameOverSound);
@@ -141,7 +140,7 @@ void Level::DrawGameOver()
 
 void Level::DrawCollision()
 {
-    DrawTexture(collisionBg, -(int)background.offsetX, 0, WHITE);
+    DrawTexture(collisionBg, -22, -100, WHITE);
     DrawButtonsForCollision();
     DrawMovingShapes();
     DrawMidShape();
