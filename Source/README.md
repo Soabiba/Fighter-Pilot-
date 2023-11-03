@@ -14,10 +14,11 @@ In this high-octane gaming experience, you will face intense dogfights, challeng
 2. [Game Overview](#game-overview)
 3. [Controls](#controls)
 4. [Features](#features)
-5. [Gameplay](#gameplay)
-6. [Game States](#game-states)
-7. [High Scores](#high-scores)
-8. [Acknowledgements](#acknowledgements)
+5. [Prequisites](#prequisites)
+6. [Gameplay](#gameplay)
+7. [Game States](#game-states)
+8. [High Scores](#high-scores)
+9. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -30,10 +31,26 @@ In Fighter Pilot, you are entrusted with a powerful fighter jet, and your object
 Fighter Pilot boasts a variety of exciting features:
 
 - **Aerial Combat:** Engage in epic dogfights with enemy jets.
-- **Stunning Graphics:** Enjoy visually stunning environments and aircraft.
+- **Stunning Graphics:** Enjoy visually stunning environments and a parallax background.
 - **Challenging Missions:** Take on diverse and challenging missions.
-- **High Scores:** Compete for the top spot on the leaderboard.
+- **High Scores:** Compete for the top spot on the leaderboard that is saved with a .txt file.
 - **Responsive Controls:** Experience precise and intuitive controls.
+
+Collision testing:
+- Between two circles.
+- Between a circle and an axis-alinged bounding box.
+- Between two axis-alinged bounding box.
+- Between a circle and a line.
+
+### Prerequisites
+
+Libraries Used:
+
+#include <fstream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+JSON
 
 ### Gameplay
 
@@ -47,8 +64,10 @@ As a Fighter Pilot, you must:
 
 Master your aircraft with these controls:
 
-- **W, S:** Adjust altitude.
-- **A, D:** Steer left and right.
+- **W, Arrow up:** Steer UP.
+- **S, Arrow down:** Steer DOWN.
+- **A, Arrow left:** Steer LEFT.
+- **D, Arrow right:** Steer RIGHT.
 
 ## Game States
 
@@ -70,8 +89,8 @@ Fighter Pilot records your highest scores and achievements. Compete with other p
 
 Special thanks to the gaming community for their continued support and inspiration.
 
-[Website](http://193.11.10.9:3000/5sd814-2023/Soad_Individual_Assignment.git) 
-Raylib Webpage: [Website](https://www.raylib.com)
+-Git Website:   [Website](http://193.11.10.9:3000/5sd814-2023/Soad_Individual_Assignment.git) 
+-Raylib Webpage: [Website](https://www.raylib.com)
 
 Let the skies be your battlefield! Good luck, Fighter Pilot!
 
