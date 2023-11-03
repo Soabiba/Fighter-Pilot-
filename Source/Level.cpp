@@ -265,10 +265,10 @@ void Level::UpdateMainGame() {
 
     // indistructable enemy planes collisions and movement.
 
-    for (auto& indestructibleEnemy : fasterEnemyPlanes) {
-        if (!indestructibleEnemy.isDead) {
-            Rectangle indestructibleEnemyHitbox = { indestructibleEnemy.position.x, indestructibleEnemy.position.y, indestructibleEnemy.width, indestructibleEnemy.height };
-            if (CheckCollisionRecs(plane.rec, indestructibleEnemyHitbox)) {
+    for (auto& fasterEnemy : fasterEnemyPlanes) {
+        if (!fasterEnemy.isDead) {
+            Rectangle fasterEnemyHitbox = { fasterEnemy.position.x, fasterEnemy.position.y, fasterEnemy.width, fasterEnemy.height };
+            if (CheckCollisionRecs(plane.rec, fasterEnemyHitbox)) {
                 plane.isDead = true;
 
                 if (IsHighScore(highscore.score)) {
@@ -280,9 +280,9 @@ void Level::UpdateMainGame() {
                     gameState = GAME_OVER;
                 }
             }
-            indestructibleEnemy.position.x -= indestructibleEnemy.speed;
-            if (indestructibleEnemy.position.x < -static_cast<float>(indestructibleEnemy.width)) {
-                indestructibleEnemy.isDead = true;
+            fasterEnemy.position.x -= fasterEnemy.speed;
+            if (fasterEnemy.position.x < -static_cast<float>(fasterEnemy.width)) {
+                fasterEnemy.isDead = true;
             }
         }
     }

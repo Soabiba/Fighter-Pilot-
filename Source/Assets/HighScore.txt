@@ -1,5 +1,5 @@
 2300 aaa
 1150 kkk
 500 eee
+300 chi
 210 bbb
-150 ddd
