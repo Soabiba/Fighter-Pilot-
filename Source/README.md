@@ -4,7 +4,7 @@
 
 ## A simple shooting game where the player tries to kill enemy jets and get as high of a score as possible
 
-# Fighter Pilot - An Exciting Air Combat Game
+## Fighter Pilot - An Exciting Air Combat Game
 
 ## Description
 
