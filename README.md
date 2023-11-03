@@ -1,9 +1,3 @@
-# Programming with C/C++ 4: Computer Games in 2D 5SD814 54825 HT2023
-
-# Created by - Soabiba Soad
-
-# A simple shooting game where the player tries to kill enemy jets and get as high of a score as possible
-
 # Fighter Pilot - An Exciting Air Combat Game
 
 ## Description
