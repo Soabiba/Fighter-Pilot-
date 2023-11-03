@@ -14,22 +14,28 @@ In this high-octane gaming experience, you will face intense dogfights, challeng
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Game Overview](#game-overview)
-3. [Controls](#controls)
-4. [Features](#features)
-5. [Prequisites](#prequisites)
-6. [Gameplay](#gameplay)
-7. [Game States](#game-states)
-8. [High Scores](#high-scores)
-9. [Acknowledgements](#acknowledgements)
-
-## Introduction
-
-In Fighter Pilot, you are entrusted with a powerful fighter jet, and your objective is to eliminate enemy aircraft while expertly navigating the skies. Prepare for heart-pounding aerial battles, mesmerizing graphics, and an immersive gaming experience.
+1. [Game Overview](#game-overview)
+2. [Controls](#controls)
+3. [Features](#features)
+4. [Prequisites](#prequisites)
+5. [Gameplay](#gameplay)
+6. [Game States](#game-states)
+7. [High Scores](#high-scores)
+8. [Acknowledgements](#acknowledgements)
 
 ## Game Overview
 
+In Fighter Pilot, you are entrusted with a powerful fighter jet, and your objective is to eliminate enemy aircraft while expertly navigating the skies. Prepare for heart-pounding aerial battles, mesmerizing graphics, and an immersive gaming experience.
+
+## Controls
+
+Master your aircraft with these controls:
+
+- **W, Arrow up:** Steer UP.
+- **S, Arrow down:** Steer DOWN.
+- **A, Arrow left:** Steer LEFT.
+- **D, Arrow right:** Steer RIGHT.
+- 
 ### Features
 
 Fighter Pilot boasts a variety of exciting features:
@@ -66,15 +72,6 @@ As a Fighter Pilot, you must:
 - Dodge enemy.
 - Lock onto and eliminate enemy aircraft.
 - Achieve the highest score and prove your piloting prowess.
-
-## Controls
-
-Master your aircraft with these controls:
-
-- **W, Arrow up:** Steer UP.
-- **S, Arrow down:** Steer DOWN.
-- **A, Arrow left:** Steer LEFT.
-- **D, Arrow right:** Steer RIGHT.
 
 ## Game States
 
