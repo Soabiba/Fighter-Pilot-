@@ -46,11 +46,11 @@ Collision testing:
 
 Libraries Used:
 
-1.#include <fstream>
-2.#include <vector>
-3.#include <algorithm>
-4.#include <cmath>
-5.JSON
+#include *<fstream>*
+#include *<vector>*
+#include *<algorithm>*
+#include *<cmath>*
+JSON
 
 ### Gameplay
 
@@ -89,8 +89,8 @@ Fighter Pilot records your highest scores and achievements. Compete with other p
 
 Special thanks to the gaming community for their continued support and inspiration.
 
--Git Website:   [Website](http://193.11.10.9:3000/5sd814-2023/Soad_Individual_Assignment.git) 
--Raylib Webpage: [Website](https://www.raylib.com)
+**Git Website:   [Website](http://193.11.10.9:3000/5sd814-2023/Soad_Individual_Assignment.git) **
+**Raylib Webpage: [Website](https://www.raylib.com)**
 
 Let the skies be your battlefield! Good luck, Fighter Pilot!
 
